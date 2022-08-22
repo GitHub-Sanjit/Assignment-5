@@ -1,5 +1,5 @@
 
-function appendList(cardTitleName) {
+function appendListItem(cardTitleName) {
     const titleNameElement = document.getElementById(cardTitleName);
     const titleName = titleNameElement.innerText;
     const playerList = document.getElementById('player-list');
