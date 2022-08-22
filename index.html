@@ -12,12 +12,21 @@
 
     <title>SELECT-BEST-FIVE</title>
 
+    <style>
+        body {
+            background-color: #2e2828;
+        }
+        input{
+            border: 1px solid ;
+        }
+    </style>
+
 
 
 </head>
 
-<body class="bg-dark mx-auto w-75 text-light p-5 ">
-    <header class="text-center">
+<body class=" mx-auto w-80 text-light p-5">
+    <header class="text-center mb-5 bg-dark py-5">
         <h1>Choose Your Top Five</h1>
         <p>Associated with Football Players Easily one of the most demanding sports in the world and by far the most
             popular. <br>
@@ -25,10 +34,10 @@
             players fall short of this goal.</p>
     </header>
 
-    <main class="mx-3 w-auto">
+    <main class="mx-1 w-auto">
         <div class="row">
             <div class="col-9">
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-4">
                         <div class="card bg-dark" style="width: auto;">
                             <img src="images/messi.jpg" class="card-img-top" alt="messi Image">
@@ -91,19 +100,43 @@
             <div class="col-3">
 
                 <div class="row">
-                    <div class="playerNameList">
-                        <h4>Selected - V</h4>
-                        <ol id="player-list">
-                            <!-- <li>Lionel Messi</li>
-                            <li>Neymar Jr</li>
-                            <li>Kylian Mbappe</li>
-                            <li>Vitor Machado</li>
-                            <li>Sergio Ramos</li> -->
-                        </ol>
+                    <div class="card bg-dark mb-3 py-3">
+                        <div class="playerNameList  ">
+                            <h4 class="mx-3 text-center">Selected - V</h4>
+                            <hr class="mx-3">
+                            <ol id="player-list">
+                                <!-- <li>Lionel Messi</li>
+                                                    <li>Neymar Jr</li>
+                                                    <li>Kylian Mbappe</li>
+                                                    <li>Vitor Machado</li>
+                                                    <li>Sergio Ramos</li> -->
+                            </ol>
+                        </div>
                     </div>
                 </div>
-                <div class="row">Budget</div>
-
+                <div class="row">
+                    <div class="card bg-dark mb-3 py-3">
+                        <div class="budget">
+                            <h4 class="mx-3 text-center">Budget</h4>
+                            <hr class="mx-5">
+                            <div class="d-flex justify-content-between mb-3">
+                                <label for="perPlayer">Per Player :</label>
+                                <input type="number" name="" id="perPlayer" class="bg-dark text-light ml-auto">
+                            </div>
+                            <button id="calculate" class="btn btn-primary mb-3 mx-5">Calculate</button>
+                            <p class="mb-3">Player Expenses = <span class="d-inline ml-3">$<span id="playerExpenses">5000</span></span></p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <label for="manager">Manager :</label>
+                                <input type="number" name="" id="manager" class="bg-dark text-light ml-auto">
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <label for="coach">Coach :</label>
+                                <input type="number" name="" id="coach" class="bg-dark text-light ml-auto">
+                            </div>
+                            <button id="calculateTotal" class="btn btn-primary mb-3 mx-5">Calculate Total</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
