@@ -15,7 +15,7 @@ document.getElementById('calculateTotal').addEventListener('click', function () 
     const coachCost = parseInt(document.getElementById('coach').value);
     const totalCost = document.getElementById('total');
 
-    let total = playerExpenses - (managerCost + coachCost);
+    let total = playerExpenses + (managerCost + coachCost);
 
     totalCost.innerText = total;
 })
